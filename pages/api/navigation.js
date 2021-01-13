@@ -16,7 +16,7 @@ const walk = async (dir) => {
 };
 
 export default async (req, res) => {
-  const pages = await walk('./_next/static/chunks/pages');
+  const pages = await walk('./_next');
   const filteredPages = pages.reduce((pages, page) => {
     // split based on file path
     const currentPagePath = page.replace('pages/', '').replace('.js', '').split('/');
