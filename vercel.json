@@ -1,7 +1,7 @@
 {
     "functions" : {
-        "api/navigation.js" : {
-            "includeFiles" : "*"
+        "pages/api/*.js" : {
+            "includeFiles" : "/pages/*.js"
         }
     }
 }
