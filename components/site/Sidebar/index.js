@@ -5,14 +5,14 @@ import { Spinner } from '@twilio-paste/core/spinner';
 import { SidebarContainer } from './SidebarContainer';
 import { SideNav } from './SideNav';
 import { SideNavList } from './SideNavList';
-// import { NavContext } from '../NavContext';
+import { NavContext } from '../NavContext';
 
 const SideBar = () => {
-  // const { nav, isLoading } = React.useContext(NavContext);
+  const { nav, isLoading } = React.useContext(NavContext);
 
   return (
     <SidebarContainer>
-      {/* <SideNav>
+      <SideNav>
         {isLoading ? (
           <Box display="flex" justifyContent="center">
             <Spinner title="loading..." />
@@ -20,7 +20,7 @@ const SideBar = () => {
         ) : (
           <SideNavList nav={nav} />
         )}
-      </SideNav> */}
+      </SideNav>
     </SidebarContainer>
   );
 };
