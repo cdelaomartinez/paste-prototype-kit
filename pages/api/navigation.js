@@ -16,8 +16,9 @@ const walk = async (dir) => {
 };
 
 export default async (req, res) => {
+  console.log('./');
+
   const pages = await walk('./pages');
-  console.log(pages);
   const filteredPages = pages.reduce((pages, page) => {
     // split based on file path
     const currentPagePath = page.replace('pages/', '').replace('.js', '').split('/');
